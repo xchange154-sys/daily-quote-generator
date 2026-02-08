@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 2.5rem;
+    border-radius: 24px;
+    background-color: white;
+    box-shadow: 0 15px 35px gray;
+}
+
+header {
+    margin-bottom: 2.5rem;
+}
+header h1 {
+    color: #2d3436;
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #636e72;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.quote-card {
+    background: #f8f9fa;
+    border-left: 5px solid #6c5ce7;
+    border-radius: 16px;
+    padding: 2.5rem;
+    margin: 2rem 0 3rem 0;
+    transition: all 1s ease;
+}
+
+.loading-message {
+    color: #636e72;
+    font-style: italic;
+}
+
+#quote-text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #2d3436;
+    margin-bottom: 1.5rem;
+    quotes: "“" "”" "‘" "’";
+}
+
+#quote-author {
+    color: #6c5ce7;
+    text-align: right;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.controls {
+    margin: 2rem 0;
+}
+
+#new-quote-btn {
+    border: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    padding: 1.1rem 2.8rem;
+    border-radius: 50px;
+    box-shadow: 0 7px 20px rgba(108, 92, 231, 0.3);
+    transition: all 0.3s ease;
+    background: linear-gradient(to right, #6c5ce7, #a29bfe);
+}
+#new-quote-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(108, 92, 231, 0.4);
+}
+#new-quote-btn:active {
+    transform: translateY(-1px);
+}
+#new-quote-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+footer {
+    margin-top: 2.5rem;
+    color: #636e72;
+    font-size: 0.95rem;
+}
+footer a {
+    color: #6c5ce7;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 770px) {
+    .container {
+        padding: 2rem 1.5rem;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .quote-card {
+        padding: 2rem 1.5rem;
+    }
+
+    #quote-text {
+        font-size: 1.5rem;
+    }
+
+    #new-quote-btn {
+        padding: 1rem 2.2rem;
+        font-size: 1.1rem;
+    }
+}
